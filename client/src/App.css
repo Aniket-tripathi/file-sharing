@@ -1,0 +1,176 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1e88e5, #1565c0);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes highlight {
+  0% {
+    background-color: #ffcc80;
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
+/* Wrapper */
+.wrapper h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  animation: slideIn 1s ease-in-out;
+}
+
+.wrapper p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Button */
+.upload-btn {
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.upload-btn:hover {
+  background-color: #0d47a1;
+  transform: scale(1.05);
+}
+
+.copy-btn {
+  background-color: #ffcc80;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  animation: bounce 2s infinite;
+}
+
+.copy-btn:hover {
+  background-color: #ffa726;
+}
+
+/* Link Display */
+.link-section {
+  margin-top: 20px;
+}
+
+.result-link {
+  display: inline-block;
+  color: #ffcc80;
+  text-decoration: none;
+  font-weight: bold;
+  word-break: break-word;
+  animation: highlight 1s ease-in-out;
+}
+
+.result-link:hover {
+  text-decoration: underline;
+}
+
+/* Copy Notification */
+.copy-notification {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #a5d6a7;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+
+
+
+
+/* * {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background: #000;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+img {
+  width: 30%;
+}
+
+.wrapper {
+  background-color: #fff;
+  width: 600px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #445a6f;
+  margin: 40px 0;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #445a6f;
+  border: 1px solid #445a6f;
+  color: #fff;
+  font-size: 20px;
+  margin: 30px 0;
+} */
